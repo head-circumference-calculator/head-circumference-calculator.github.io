@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head Circumference Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="logo">
+            <h2>HCC</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="#calculator" class="cta-button">Try Calculator</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Head Circumference Calculator</h1>
+            <p>Measure and track head size with ease for health and growth monitoring.</p>
+            <a href="#calculator" class="cta-button">Try It Now</a>
+        </div>
+    </header>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="calculator-section">
+        <h2>Calculate Head Circumference</h2>
+        <div class="calculator-container">
+            <form id="calc-form">
+                <div class="form-group">
+                    <label for="measurement">Head Circumference (cm):</label>
+                    <input type="number" id="measurement" step="0.1" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age (months):</label>
+                    <input type="number" id="age" min="0" max="36" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <button type="submit" class="calc-button">Calculate</button>
+            </form>
+            <div id="result" class="result"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Why Choose Our Calculator?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Quick & Accurate</h3>
+                <p>Get instant results with precise calculations.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Age-Based Norms</h3>
+                <p>Compare with WHO/CDC growth standards.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-user-friendly"></i>
+                <h3>User-Friendly</h3>
+                <p>Designed for parents and professionals.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-save"></i>
+                <h3>Track Progress</h3>
+                <p>Save and monitor measurements over time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <span>1</span>
+                <p>Enter head circumference in cm.</p>
+            </div>
+            <div class="step">
+                <span>2</span>
+                <p>Select age and gender.</p>
+            </div>
+            <div class="step">
+                <span>3</span>
+                <p>View results and growth percentiles.</p>
+            </div>
+            <div class="step">
+                <span>4</span>
+                <p>Save or export data.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases-section">
+        <h2>Who Can Use It?</h2>
+        <div class="use-cases-grid">
+            <div class="use-case">
+                <h3>Parents</h3>
+                <p>Monitor your child’s growth at home.</p>
+            </div>
+            <div class="use-case">
+                <h3>Pediatricians</h3>
+                <p>Assess head size during checkups.</p>
+            </div>
+            <div class="use-case">
+                <h3>Researchers</h3>
+                <p>Collect data for growth studies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Ready to Get Started?</h2>
+        <p>Try our free Head Circumference Calculator today!</p>
+        <a href="#calculator" class="cta-button">Start Calculating</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Head Circumference Calculator. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-x"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
