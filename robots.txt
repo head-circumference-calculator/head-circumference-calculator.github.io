@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://head-circumference-calculator.github.io/sitemap.xml
